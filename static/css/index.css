@@ -112,6 +112,33 @@
 }
 
 .publication-teaser {
+    max-height: 230px;
     display: block;
-    width: 512px;
+    margin: 0 auto;
+    width: 100%;
+    object-fit: contain;
+}
+
+.publication-inner-div {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+    .publication-teaser {
+        max-height: 400px;
+        min-height: 200px;
+    }
+
+    .publication-inner-div {
+        height: auto;
+        min-height: 200px;
+    }
+
+    .publication-block .column.is-4 {
+        margin-bottom: 1rem;
+    }
 }
